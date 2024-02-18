@@ -24,7 +24,7 @@ HTML CSS JAVA SCRIPT SQL PYTHON FLASK
 Instructions for setting up project
 
 ## How to Run
-Hosting using pyhton flask framework.
+Hosting using python flask framework.
 
 ## Other Links
 Provide any other links ( for eg. Wireframe , UI, Abstract, Presentation )
