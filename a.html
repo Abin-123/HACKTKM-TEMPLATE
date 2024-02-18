@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML DATA</title>
+    <h1>DATA</h1>
+</head>
+<body>
+    <p id="storedText"></p>
+    <script>
+        // Function to get the value of the text from the URL query parameters
+        function getTextFromURL() {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            return urlParams.get('text');
+        }
+
+        // Retrieve the text from the URL and display it on the page
+        var storedText = getTextFromURL();
+        document.getElementById("storedText").innerText = "Stored text: " + storedText;
+    </script>
+</body>
+</html>

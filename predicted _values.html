@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicted Values</title>
+</head>
+<body>
+
+    <h1>Predicted Demand and Ingredients</h1>
+
+    <!-- Display predicted demand plot -->
+    <h2>Predicted Demand Plot</h2>
+    <img src="data:image/png;base64,{{ img_str }}" alt="Predicted Demand Plot">
+
+    <!-- Display tabular view for ingredients required excluding Rice Type -->
+    <h2>Tabular View for Ingredients Required (excluding Rice Type)</h2>
+    {{ df_ingredients_without_rice | safe }}
+
+    <!-- Display tabular view for row sums -->
+    <h2>Tabular View for Row Sums</h2>
+    {{ row_sums | safe }}
+
+</body>
+</html>

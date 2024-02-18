@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient Prediction</title>
+</head>
+<body>
+    
+    <h2>Predicted Demand</h2>
+    <p>Biriyani: {{ predicted_biriyani }}</p>
+    <p>Fried Rice: {{ predicted_fried_rice }}</p>
+    <h2>Row Sums</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Row Sum</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item, sum_value in row_sums.items() %}
+                <tr>
+                    <td>{{ item }}</td>
+                    <td>{{ sum_value }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
